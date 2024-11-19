@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html><head> 
+    <title>Sobre o TDAH</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <img src="TDAH.png" alt="Banner" class="banner">
+</head>
+<body>
+    <div class="container"> 
+        <div>
+        <input type="checkbox" id="chk" class="checkbox">
+            <label class="label" for="chk">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+                <div class="ball"></div>
+            </label>
+        </div>
+    <h1> Um guia rápido sobre TDAH </h1>
+        <p>Aqui, você encontrará informações completas sobre o que é o TDAH, como ele afeta crianças, adolescentes e adultos, e as maneiras de identificar os sintomas.</p>
+        <p> Nosso conteúdo foi desenvolvido para esclarecer as causas e os fatores de risco do TDAH, além de explicar as abordagens de tratamento mais comuns, como terapias comportamentais e uso de medicação, oferecendo também orientações sobre como lidar com o transtorno no dia a dia.</p>
+        <p> Abordaremos os assuntos nos seguintes tópicos</p>
+    <ul>
+        <li> O que é o TDAH? </li>
+        <li> Quais são os sintomas? </li>
+        <li> Como tratar? </li>
+    </ul>
+    <h1> O que é TDAH?</h1>
+        <p> O Transtorno de Déficit de Atenção com Hiperatividade (TDAH) é um distúrbio neurobiológico crônico que se caracteriza pela desatenção, impulsividade e agitação motora.<br>
+             O TDAH afeta principalmente crianças – cerca de 3% a 5% –, acometendo mais os meninos.<br>
+             Ele é chamado, às vezes, de DDA (Distúrbio do Déficit de Atenção). </p>
+    <h1> Quais são os sintomas? </h1>
+    <p> Os sintomas do TDAH podem se manifestar de várias formas.<br>  
+        Em relação ao comportamento, os sintomas são: </p>
+        <ul>
+            <li> Agressão </li>
+            <li> Hiperatividade </li>
+            <li> Excitabilidade </li>
+            <li> Impulsividade </li>
+            <li> Inquietação </li>
+            <li> Falta de moderação </li>
+            <li> Irritabilidade </li>
+        </ul>
+    <p> Na cognição, os sintomas se manifestam com: </p>
+        <ul>
+            <li> Exciração </li>
+            <li> Ansiedade </li>
+            <li> Raiva </li>
+            <li> Depressão </li>
+        </ul>
+    <p> No caso do TDAH em adultos, o diagnóstico é feito de forma tardia porque a pessoa com o transtorno nunca apresentou déficits funcionais significativos durante a infância e/ou adolescência.</br> 
+        No entanto, os sintomas que aparecem na vida adulta são, por exemplo:</p>
+            <ul>
+                <li> Provenientes de excesso de trabalho </li>
+                <li> De estudos universitários intensos; </li>
+                <li> Dificuldade para se concentrar nas tarefas domésticas; </li>
+                <li> Dificuldade para ouvir pacientemente palestras e exposições; </li>
+            </ul>
+    <h1> Como tratar? </h1>
+    <p> O tratamento para o Transtorno do Déficit de Atenção com Hiperatividade (TDAH) pode ser feito de várias formas, incluindo: </p>
+        <ul> <li> Medicamentos </li> </ul>
+    <p> A medicação é uma parte importante do tratamento, e pode incluir psicoestimulantes como o metilfenidato (Ritalina) e a lisdexanfetamina (Venvanse). Em casos específicos, podem ser prescritos antipsicóticos como a tioridazina ou a risperidona.</br> 
+        Em 2023, foi aprovada no Brasil a atomoxetina, um medicamento não estimulante.</p>    
+        <ul> <li> Terapia cognitivo-comportamental </li> </ul>
+    <p> Esta terapia é indicada para quadros mais severos, e é especialmente benéfica para jovens a partir dos 12 anos.</p>    
+        <ul> <li> Orientações aos pais e professores </li> </ul>
+    <p> Os pais devem trabalhar em conjunto com o médico da criança, e os professores devem conhecer técnicas para ajudar os alunos com TDAH. </p>    
+        <ul> <li> Técnicas específicas </li> </ul>
+    <p> O portador do TDAH pode aprender técnicas específicas para minimizar as suas dificuldades. </p>    
+        <ul> <li> Terapias alternativas </li> </ul>
+    <p> O biofeedback e o neurofeedback podem ser eficazes, pois visam corrigir a raiz do problema. </p>    
+        <ul> <li> Hábitos saudáveis </li> </ul>
+    <p> Praticar exercícios físicos, manter hábitos alimentares saudáveis e dormir bem podem ajudar a aliviar o estresse e a melhorar o humor.</p>
+    <a href="index.html"> Voltar para Página inicial </a>
+</body>
+    <style>
+        
+        .banner{
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        display: block;
+        box-shadow: 0 4px 60px rgba(0, 0, 0, 0.2);
+        border-radius: 18px;
+    }
+    
+    
+    .checkbox{
+        opacity: 0;
+        position: absolute;
+    }
+    .label{
+        background-color: #111;
+        border-radius: 50px;
+        cursor: pointer;
+        
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5px;
+        position: relative;
+        height: 20px;
+        width: 50px; 
+    }
+    .label .ball{
+        background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    left: 2px;
+    
+    height: 22px;
+    width: 22px;
+    
+    transform: translateX(0px);
+    transition: transform 0.2s linear;
+}
+.checkbox:checked + .label .ball {
+    transform: translateX(33px);
+}
+.fa-moon {
+    color:#f39c12
+}
+.fa-sun {
+    color: #f1c40f;
+}
+body{
+    margin: 0;
+    transition: background 0.2 linear;
+}
+body.dark{
+    background-color: gray;
+}
+body.dark .container{
+    background-color: gray;
+    color: #111;
+}
+.container{
+    width: 1000px;
+    box-sizing: border-box;
+    border-radius: 18px;
+    box-shadow: 0 4px 60px rgba(0, 0, 0, 0.2);
+    margin: 20px auto;
+    padding: 40px;
+    text-align: justify;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: white;
+    color: black;
+    }
+    </style>
+     <script>
+        const chk = document.getElementById('chk');
+
+    chk.addEventListener('change', () => {
+        document.body.classList.toggle('dark');
+    });
+    </script>
+</html>

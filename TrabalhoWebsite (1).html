@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head> 
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta charset="utf-8">
+    <title>Transtornos Mentais</title>
+    <img src="Transtornos_Mentais.png" alt="Banner" class="banner">
+</head>
+<body>
+     <div class="container">
+        <div>
+            <input type="checkbox" id="chk" class="checkbox">
+            <label class="label" for="chk">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+                <div class="ball"></div>
+            </label>
+        </div>
+        <h1> Transtornos Mentais </h1>
+    </section>
+    <section class="informativo">
+        <h2>Sobre</h2>
+        <p>Os transtornos mentais são condições de saúde que afetam o comportamento, o pensamento, as emoções e o bem-estar geral de uma pessoa. Essas condições podem variar de leves a graves e interferir na capacidade da pessoa de funcionar adequadamente em seu cotidiano, seja no trabalho, nos estudos ou nas relações sociais. Embora muitas pessoas experienciem dificuldades emocionais e psicológicas ao longo da vida, os transtornos mentais, em sua definição clínica, são condições que causam sofrimento significativo e prejudicam o funcionamento de forma mais persistente.</p>
+        <p>Existem diversos tipos de transtornos mentais, que podem ser classificados em diferentes categorias. Alguns dos exemplos mais comuns incluem:</p>
+        
+        <h1> Depressão </h1>
+        <p>Caracteriza-se por sentimentos persistentes de tristeza, desesperança e falta de interesse em atividades que antes eram prazerosas.<br>
+            Pode incluir sintomas como fadiga, alterações no apetite e no sono, além de pensamentos suicidas em casos graves.</p>
+            
+       <h1>Ansiedade</h1>  
+       <p>Transtornos de ansiedade envolvem uma sensação de medo ou apreensão excessiva, que pode se manifestar em ataques de pânico, fobias ou transtorno de ansiedade generalizada. <br> A pessoa pode sentir um medo irracional, mesmo quando não há uma ameaça real.</p>
+       
+       <h1> Transtorno de Déficit de Atenção e Hiperatividade (TDAH)</h1> 
+       <p>O Transtorno de Déficit de Atenção e Hiperatividade (TDAH) é uma condição neuropsiquiátrica que afeta principalmente crianças, embora também possa persistir na vida adulta. <br>Pessoas com TDAH apresentam dificuldades em manter a atenção, controlar impulsos e, em alguns casos, são excessivamente ativas (hiperatividade). <br> Esses sintomas podem interferir no desempenho acadêmico, profissional e nas relações sociais.</p>
+       
+    </section>   
+    <h2>Para saber mais</h2>
+    <p> Acesse as páginas onde nos aprofundamos mais nos assuntos ditos acima</p>
+    <a href=Tdah.html> Página sobre TDAH</a> <br>
+    <a href=Ansiedade.html> Página sobre Ansiedade</a><br>
+    <a href=Depressao.html> Página sobre Depressão</a>
+</div>
+</body>
+<style>
+    .banner{
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        display: block;
+        box-shadow: 0 4px 60px rgba(0, 0, 0, 0.2);
+        border-radius: 18px;
+    }
+    
+    
+    .checkbox{
+        opacity: 0;
+        position: absolute;
+    }
+    .label{
+        background-color: #111;
+        border-radius: 50px;
+        cursor: pointer;
+        
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5px;
+        position: relative;
+        height: 20px;
+        width: 50px; 
+    }
+    .label .ball{
+        background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    left: 2px;
+    
+    height: 22px;
+    width: 22px;
+    
+    transform: translateX(0px);
+    transition: transform 0.2s linear;
+}
+.checkbox:checked + .label .ball {
+    transform: translateX(33px);
+}
+.fa-moon {
+    color:#f39c12
+}
+.fa-sun {
+    color: #f1c40f;
+}
+body{
+    margin: 0;
+    transition: background 0.2 linear;
+}
+body.dark{
+    background-color: gray;
+}
+body.dark .container{
+    background-color: gray;
+    color: #111;
+}
+.container{
+    width: 1000px;
+    box-sizing: border-box;
+    border-radius: 18px;
+    box-shadow: 0 4px 60px rgba(0, 0, 0, 0.2);
+    margin: 20px auto;
+    padding: 40px;
+    text-align: justify;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: white;
+    color: black;
+    }
+    </style>
+    <script>
+        const chk = document.getElementById('chk');
+
+    chk.addEventListener('change', () => {
+        document.body.classList.toggle('dark');
+    });
+    </script>
+</html>
